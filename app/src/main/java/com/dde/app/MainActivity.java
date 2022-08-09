@@ -92,16 +92,19 @@ String temp=Link;
 
             switch (item.getItemId())
             {
-                case R.id.home:
+                case R.id.Home:
             Link ="https://defencedirecteducation.com/category/blogs/";
+                    subMenu.setVisibility(View.GONE);
             break;
 
                 case R.id.myAccount:
                     Link ="https://defencedirecteducation.com/my-account/downloads/";
+                    subMenu.setVisibility(View.GONE);
                     break;
 
                 case R.id.quiz:
                     Link ="https://defencedirecteducation.com/quiz/";
+                    subMenu.setVisibility(View.GONE);
                     break;
 
                 case R.id.menu:
