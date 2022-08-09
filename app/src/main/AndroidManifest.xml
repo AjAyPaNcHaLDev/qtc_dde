@@ -7,10 +7,8 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
-        tools:ignore="GoogleAppIndexingWarning"
-        tools:targetApi="q"
+        android:name=".Notify"
         android:allowBackup="true"
         android:icon="@mipmap/app_logo"
         android:label="D D E "
@@ -18,9 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
-        android:name=".Notify">
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="q">
         <activity
-            android:name="com.dde.app.SplashActivity"
+            android:name=".SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,8 +28,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.dde.app.MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

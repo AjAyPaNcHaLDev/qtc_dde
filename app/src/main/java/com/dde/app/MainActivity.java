@@ -7,11 +7,13 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
@@ -31,6 +33,8 @@ import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -52,8 +56,12 @@ public class MainActivity extends AppCompatActivity {
     WebView myview;
     public  static String Link="";
     RelativeLayout layout;
+    LinearLayout subMenu;
     SwipeRefreshLayout swipeRefreshLayout;
 BottomNavigationView bottomNavigationView;
+Dialog smallMenu;
+
+    Button currentAffairs,books,e_book;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +75,10 @@ BottomNavigationView bottomNavigationView;
 swipeRefreshLayout=(SwipeRefreshLayout) findViewById(R.id.swipeToRefresh);
 
       initWebView();
+
+        smallMenu=new Dialog(this);
+
+
 
         //--------> bootam navigation view   code start <-------
 
@@ -93,7 +105,7 @@ String temp=Link;
                     break;
 
                 case R.id.menu:
-
+openSubMenu();
                     break;
             }
               if(!temp.equals(Link))  initWebView();
@@ -102,7 +114,7 @@ String temp=Link;
             }
         });
 
-
+ subMenEvents();
 //--------> bootam navigation view   code end <-------
 
 
@@ -119,6 +131,49 @@ String temp=Link;
         });
 
 
+
+
+    }
+
+    private void subMenEvents() {
+
+        currentAffairs=findViewById(R.id.currentAffairs);
+                books=findViewById(R.id.books);
+        e_book=findViewById(R.id.e_book);
+        currentAffairs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Link ="https://defencedirecteducation.com/product-category/current-affairs-dde/";
+                initWebView();
+                subMenu.setVisibility(View.GONE);
+            }
+        });
+                books.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Link ="https://defencedirecteducation.com/product-category/book/";
+                        initWebView();
+                        subMenu.setVisibility(View.GONE);
+                    }
+                });
+        e_book.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Link ="https://defencedirecteducation.com/product-category/ebook/ssb/";
+                initWebView();
+                subMenu.setVisibility(View.GONE);
+            }
+        });
+    }
+
+    private void openSubMenu() {
+
+        subMenu=findViewById(R.id.subMenu);
+        if(subMenu.getVisibility()==View.VISIBLE)
+        subMenu.setVisibility(View.GONE);
+        else
+            subMenu.setVisibility(View.VISIBLE);
 
 
     }
