@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/quiz"
+        android:enabled="true"
+        android:icon="@drawable/ic_user_secret_solid"
+        android:title="Quiz"/>
+    <item
+        android:id="@+id/myAccount"
+        android:enabled="true"
+        android:icon="@drawable/ic_circle_user_solid"
+        android:title="My Account"/>
+    <item
+        android:id="@+id/menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Menu"/>
+
+</menu>

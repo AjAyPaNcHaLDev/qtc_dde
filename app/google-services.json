@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "730063477787",
+    "project_id": "defencedirecteducation-239f3",
+    "storage_bucket": "defencedirecteducation-239f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730063477787:android:4e84e46db0221664e16cbe",
+        "android_client_info": {
+          "package_name": "com.gaurihub.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730063477787-1vg8gb6vdcr6vdft9eimbbm7r763hgi5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFmy0toAe6EqSHT7vgx9IiR0EcbTW8Hfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730063477787-1vg8gb6vdcr6vdft9eimbbm7r763hgi5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
