@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Parcelable;
+import android.util.Log;
 import android.view.MenuItem;
 import android.webkit.CookieManager;
 import android.provider.MediaStore;
@@ -73,7 +74,7 @@ Dialog smallMenu;
 
         layout = (RelativeLayout) findViewById(R.id.layout);
 swipeRefreshLayout=(SwipeRefreshLayout) findViewById(R.id.swipeToRefresh);
-
+        subMenu=findViewById(R.id.subMenu);
       initWebView();
 
         smallMenu=new Dialog(this);
@@ -172,7 +173,7 @@ openSubMenu();
 
     private void openSubMenu() {
 
-        subMenu=findViewById(R.id.subMenu);
+
         if(subMenu.getVisibility()==View.VISIBLE)
         subMenu.setVisibility(View.GONE);
         else
@@ -251,7 +252,12 @@ openSubMenu();
             public void onPageFinished(WebView view, String url) {
                 swipeRefreshLayout.setRefreshing(false);
                 hideLoader();
-                CookieManager.getInstance().flush();
+                try {
+                    CookieManager.getInstance().flush();
+                }catch (Exception e){
+                    Log.e("error",e.toString());
+                }
+
 
             }
         });
