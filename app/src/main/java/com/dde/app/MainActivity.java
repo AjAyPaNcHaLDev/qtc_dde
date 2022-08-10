@@ -72,14 +72,12 @@ Dialog smallMenu;
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//  set status text dark
         getWindow().setStatusBarColor(ContextCompat.getColor(this, android.R.color.white));
 
-        layout = (RelativeLayout) findViewById(R.id.layout);
+layout = (RelativeLayout) findViewById(R.id.layout);
 swipeRefreshLayout=(SwipeRefreshLayout) findViewById(R.id.swipeToRefresh);
-        subMenu=findViewById(R.id.subMenu);
+subMenu=findViewById(R.id.subMenu);
+myview = (WebView) findViewById(R.id.webView);
+        showLoader();
       initWebView();
-
-        smallMenu=new Dialog(this);
-
-
 
         //--------> bootam navigation view   code start <-------
 
@@ -183,8 +181,8 @@ openSubMenu();
     }
 
     private void initWebView() {
-        showLoader();
-        myview = (WebView) findViewById(R.id.webView);
+
+
 
         HashMap<String, String> map = new HashMap<>();
         myview.getSettings().setDomStorageEnabled(true);
@@ -251,8 +249,9 @@ openSubMenu();
             @Override
             public void onPageFinished(WebView view, String url) {
                 swipeRefreshLayout.setRefreshing(false);
-                hideLoader();
+
                 try {
+                    hideLoader();
                     CookieManager.getInstance().flush();
                 }catch (Exception e){
                     Log.e("error",e.toString());
