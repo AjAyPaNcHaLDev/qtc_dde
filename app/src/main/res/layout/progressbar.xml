@@ -4,5 +4,9 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="54dp"
+        android:layout_height="65dp"
+        android:src="@drawable/loading_best" />
 
 </RelativeLayout>

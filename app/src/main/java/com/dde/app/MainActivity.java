@@ -76,6 +76,7 @@ layout = (RelativeLayout) findViewById(R.id.layout);
 swipeRefreshLayout=(SwipeRefreshLayout) findViewById(R.id.swipeToRefresh);
 subMenu=findViewById(R.id.subMenu);
 myview = (WebView) findViewById(R.id.webView);
+
         showLoader();
       initWebView();
 
@@ -107,6 +108,9 @@ String temp=Link;
                     break;
 
                 case R.id.menu:
+                    Link ="https://defencedirecteducation.com/product-category/current-affairs-dde/";
+                    subMenu.setVisibility(View.GONE);
+
 openSubMenu();
                     break;
             }
