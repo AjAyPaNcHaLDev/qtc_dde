@@ -37,6 +37,7 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
 Dialog smallMenu;
 
-    Button currentAffairs,books,e_book;
+    TextView currentAffairs,books,e_book;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,7 +84,6 @@ myview = (WebView) findViewById(R.id.webView);
         //--------> bootam navigation view   code start <-------
 
         bottomNavigationView=findViewById(R.id.bottom_navigation);
-
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
