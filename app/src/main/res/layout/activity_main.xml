@@ -44,6 +44,8 @@
         android:id="@+id/containerMenu">
 
 <include layout="@layout/sub_menu"
+    android:layout_height="600dp"
+    android:layout_width="match_parent"
     android:visibility="gone"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
