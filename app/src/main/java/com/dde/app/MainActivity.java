@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
 Dialog smallMenu;
 
-    TextView currentAffairs,books,e_book;
+    TextView currentAffairs,books,e_book,courses;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -146,6 +146,17 @@ openSubMenu();
         currentAffairs=findViewById(R.id.currentAffairs);
                 books=findViewById(R.id.books);
         e_book=findViewById(R.id.e_book);
+        courses=findViewById(R.id.courses);
+
+        courses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Link ="https://ddeexams.com/";
+                initWebView();
+                subMenu.setVisibility(View.GONE);
+            }
+        });
         currentAffairs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

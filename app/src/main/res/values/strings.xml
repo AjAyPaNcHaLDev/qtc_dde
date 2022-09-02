@@ -4,4 +4,6 @@
     <string name="exit">Exit</string>
     <string name="alert_msg_for_exiting">Are you sure you want to exit this App?</string>
     <string name="refresh"><u>Refresh now</u></string>
+    <string name="books">Books</string>
+    <string name="current_affairs">Current Affairs</string>
 </resources>

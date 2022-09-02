@@ -19,8 +19,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageViewLogo"
-            android:layout_width="258dp"
-            android:layout_height="622dp"
+            android:layout_width="167dp"
+            android:layout_height="121dp"
             android:contentDescription="Print Urgent"
             android:cropToPadding="false"
             android:longClickable="false"
@@ -28,12 +28,10 @@
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.495"
-            app:srcCompat="@drawable/dde_logo"
-            tools:srcCompat="@drawable/dde_logo" />
+            app:srcCompat="@drawable/dde_logo_5"
+            tools:srcCompat="@drawable/dde_logo_5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
