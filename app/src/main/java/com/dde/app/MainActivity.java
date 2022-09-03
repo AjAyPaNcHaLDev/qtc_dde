@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
 Dialog smallMenu;
 
-    TextView currentAffairs,books,e_book,courses;
+    LinearLayout currentAffairs,books,e_book,courses;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

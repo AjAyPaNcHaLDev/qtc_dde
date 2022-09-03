@@ -25,19 +25,24 @@
         android:layout_height="196dp"
         android:layout_margin="5dp"
         android:gravity="center"
+        android:id="@+id/books"
         android:background="@drawable/rectangle_ek8_shape"
         android:orientation="vertical">
 
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_books_icon"/>
         <TextView
-            android:id="@+id/books"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/ic_bookshelf_svgrepo_com"
-            android:textColor="@android:color/black"
             android:textAlignment="center"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="@string/books" />
+            android:textColor="@android:color/black"
+            android:text="Books"/>
 
     </LinearLayout>
 
@@ -45,20 +50,25 @@
         android:layout_width="167dp"
         android:layout_height="196dp"
         android:gravity="center"
+        android:id="@+id/e_book"
         android:layout_margin="5dp"
         android:background="@drawable/rectangle_ek8_shape"
         android:orientation="vertical">
 
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_ebook_icon"/>
         <TextView
-            android:id="@+id/e_book"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/ic_book_svgrepo_com"
-            android:text="E-Book"
             android:textAlignment="center"
-            android:textColor="@android:color/black"
+            android:textStyle="bold"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textColor="@android:color/black"
+            android:text="E-Book"/>
 
     </LinearLayout>
 
@@ -66,22 +76,26 @@
         android:layout_width="167dp"
         android:layout_height="196dp"
         android:gravity="center"
+        android:id="@+id/currentAffairs"
         android:layout_margin="5dp"
         android:background="@drawable/rectangle_ek8_shape"
         android:orientation="vertical">
 
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_current_affairs_icon"/>
         <TextView
-            android:id="@+id/currentAffairs"
-            android:layout_height="wrap_content"
+
             android:layout_width="match_parent"
-            android:layout_margin="5dp"
-            android:drawableTop="@drawable/ic_university_lecture_svgrepo_com"
-            android:text="@string/current_affairs"
-            android:drawableTint="#3F51B5"
+            android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:text="@string/current_affairs" />
 
     </LinearLayout>
 
@@ -89,6 +103,7 @@
         android:layout_width="167dp"
         android:layout_height="196dp"
         android:gravity="center"
+        android:id="@+id/courses"
         android:layout_margin="5dp"
         android:background="@drawable/rectangle_ek8_shape"
         android:orientation="vertical">
@@ -98,7 +113,7 @@
             android:layout_height="100dp"
             android:src="@drawable/course_icon"/>
         <TextView
-            android:id="@+id/courses"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
