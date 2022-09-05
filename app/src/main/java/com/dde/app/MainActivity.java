@@ -75,7 +75,7 @@ Dialog smallMenu;
 
 layout = (RelativeLayout) findViewById(R.id.layout);
 swipeRefreshLayout=(SwipeRefreshLayout) findViewById(R.id.swipeToRefresh);
-subMenu=findViewById(R.id.subMenu);
+subMenu=findViewById(R.id.containerMenu);
 myview = (WebView) findViewById(R.id.webView);
 
         showLoader();

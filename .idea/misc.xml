@@ -12,11 +12,11 @@
         <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/drawable/ic_tablet_screen_button_solid.xml" value="0.1115" />
         <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/drawable/rectangle_ek7_shape.xml" value="0.155" />
         <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/drawable/rectangle_ek8_shape.xml" value="0.1635" />
-        <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/layout/activity_main.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/layout/activity_my_sub_menu.xml" value="0.1796875" />
         <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/layout/activity_splash.xml" value="0.359375" />
         <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/layout/progressbar.xml" value="0.1068840579710145" />
-        <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/layout/sub_menu.xml" value="0.25" />
+        <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/layout/sub_menu.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/ok/Downloads/gaurihub-updated now DDE/DDE/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1796875" />
       </map>
     </option>
@@ -26,5 +26,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.13333333333333333" />
+      </ProjectState>
+    </option>
   </component>
 </project>
