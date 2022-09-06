@@ -95,16 +95,19 @@ String temp=Link;
                 case R.id.Home:
             Link ="https://defencedirecteducation.com/category/blogs/";
                     subMenu.setVisibility(View.GONE);
+                    showLoader();
             break;
 
                 case R.id.myAccount:
                     Link ="https://defencedirecteducation.com/my-account/downloads/";
                     subMenu.setVisibility(View.GONE);
+                    showLoader();
                     break;
 
                 case R.id.quiz:
                     Link ="https://defencedirecteducation.com/quiz/";
                     subMenu.setVisibility(View.GONE);
+                    showLoader();
                     break;
 
                 case R.id.menu:
@@ -153,6 +156,7 @@ openSubMenu();
             public void onClick(View view) {
 
                 Link ="https://ddeexams.com/";
+                showLoader();
                 initWebView();
                 subMenu.setVisibility(View.GONE);
             }
@@ -160,7 +164,7 @@ openSubMenu();
         currentAffairs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                showLoader();
                 Link ="https://defencedirecteducation.com/product-category/current-affairs-dde/";
                 initWebView();
                 subMenu.setVisibility(View.GONE);
@@ -169,6 +173,7 @@ openSubMenu();
                 books.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        showLoader();
                         Link ="https://defencedirecteducation.com/product-category/book/";
                         initWebView();
                         subMenu.setVisibility(View.GONE);
@@ -221,7 +226,7 @@ openSubMenu();
 
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-
+//                showLoader();
                 if (request.getUrl().toString().startsWith("tel:")) {
 
                     Intent intent = new Intent(Intent.ACTION_DIAL,
